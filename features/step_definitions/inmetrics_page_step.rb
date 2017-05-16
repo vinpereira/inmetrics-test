@@ -8,5 +8,8 @@ When(/^I access the about page$/) do
 end
 
 Then(/^I should see "(.*)"$/) do |text|
-  expect(page).to have_content text
+  @about = About.new
+
+  # expect(page).to have_content text
+  expect(@about.heading.text).to include text
 end
