@@ -8,4 +8,4 @@ Feature: Verify text in Inmetrics' site
   Scenario: Check text
     Given I am on Inmetrics page
      When I access the about page
-     Then I should see "mais de 15 anos de atuação"
+     Then I should see "MAIS DE 15 ANOS DE ATUAÇÃO"
