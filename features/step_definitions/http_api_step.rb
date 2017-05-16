@@ -20,3 +20,7 @@ Then(/^I perform another GET to "(.*)" with a higher number$/) do |service_name|
   number = @count_result + 10
   @http_api = HTTParty.get("http://swapi.co/api/#{service_name}/#{number}")
 end
+
+Then(/^I should get a message with "(.*)"$/) do |message|
+  expect(@http_api["detail"]).to eq message
+end

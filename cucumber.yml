@@ -1,0 +1,14 @@
+##YAML Template
+---
+default: --no-profile
+html_report: --format progress --format html --out=features_report.html
+
+inmetrics: --tags @inmetrics
+
+orangehrm: --tags @orangehrm
+orangehrm_add_case: --tags @orangehrm_add_case
+orangehrm_wrong_login: --tags @orangehrm_wrong_login
+
+http_api: --tags @http_api
+http_api_statuscode: --tags @http_api_statuscode
+http_api_count: --tags @http_api_count
