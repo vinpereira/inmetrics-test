@@ -1,6 +1,7 @@
 require 'capybara'
 require 'capybara/cucumber'
 require 'capybara/dsl'
+require 'httparty'
 require 'rspec'
 require 'selenium-webdriver'
 require 'site_prism'
