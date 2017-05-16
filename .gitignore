@@ -1,2 +1,5 @@
 ## Gemfile.lock ##
 *.lock
+
+## HTML Report ##
+*.html
