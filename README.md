@@ -1,6 +1,7 @@
 # Inmetrics Test - QA Agile Tester
 
 To solve the test I needed to learn about HTTParty and SitePrism. It was fun =)
+
 I need to better understand the Section in SitePrism to improve my code.
 
 ## Programming Language and libraries used to solve the problems
