@@ -1,13 +1,13 @@
 Given(/^I am on OrangeHRM page$/) do
-  @orange_home = OrangeHome.new
-  @orange_home.load
+  @login = Login.new
+  @login.load
 end
 
 Given(/^I perform a login as Peter$/) do
-  @orange_home.username.set 'peter.mac'
-  @orange_home.password.set 'peter.mac'
+  @login.username.set 'peter.mac'
+  @login.password.set 'peter.mac'
 
-  @orange_home.login_button.click
+  @login.login_button.click
 end
 
 When(/^I access disciplinary section$/) do
@@ -33,13 +33,13 @@ Then(/^I should see the new disciplinary case$/) do
 end
 
 When(/^I try to login with wrong username$/) do
-  @orange = OrangeHome.new
-  @orange.username.set 'peter.mac'
-  @orange.password.set 'peter.mac123'
+  @login = Login.new
+  @login.username.set 'peter.mac'
+  @login.password.set 'peter.mac123'
 
-  @orange.login_button.click
+  @login.login_button.click
 end
 
 Then(/^I should see the Retry Login Page$/) do
-  expect(@orange.current_url).to eq 'https://enterprise-demo.orangehrmlive.com/securityAuthentication/retryLogin'
+  expect(@login.current_url).to eq 'https://enterprise-demo.orangehrmlive.com/securityAuthentication/retryLogin'
 end
