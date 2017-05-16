@@ -1,10 +1,10 @@
 Given(/^I am on Inmetrics page$/) do
-  @home = Home.new
-  @home.load
+  @inmetrics_home = InmetricsHome.new
+  @inmetrics_home.load
 end
 
 When(/^I access the about page$/) do
-  @home.about_link.click
+  @inmetrics_home.about_link.click
 end
 
 Then(/^I should see "(.*)"$/) do |text|
